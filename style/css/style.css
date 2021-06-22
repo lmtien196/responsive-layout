@@ -1,0 +1,285 @@
+/* Universal style 
+====================
+====================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header style
+=====================
+=====================*/
+
+header {
+  background-color: #fafafa;
+  padding: 2px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header ul {
+  padding: 10px;
+}
+
+header li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+header img {
+  width: 70%;
+  margin-top: 10px;
+}
+
+header p {
+  line-height: 1.4em;
+  padding: 15px;
+}
+
+/* main style
+=========================
+========================*/
+
+.skills h3 {
+  padding: 15px;
+  margin: 20px;
+}
+
+
+section img {
+  width: 90%;
+}
+
+.skills h2 {
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.skills p {
+  line-height: 1.4em;
+  padding: 0 10px 15px;
+  margin: 0 10px 15px;
+}
+
+/* Contact style
+=================
+================= */
+
+.contact {
+  margin: 40px 0 0;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.contact h3 {
+  padding-top: 50px;
+}
+
+.contact p {
+  padding: 20px 40px;
+  margin: 0;
+}
+
+p.phone {
+  padding-bottom: 0;
+}
+
+p.email {
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+/* Footer style
+===================
+===================*/
+footer {
+  background-color: #fafafa;
+}
+
+.border {
+  border-top: rgb(197, 190, 190) 1px solid;
+  margin: 0 40px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 38px 15px 38px;
+}
+
+  
+/* Media query
+===================
+=================== */
+
+@media (max-width: 554px) and (min-width: 0px) {
+  footer nav {
+    display: none;
+  }
+}
+
+@media (min-width: 555px) and (max-width: 1023px) {
+
+  h1 {
+    padding-top: 15px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  header li {
+    background-color: #fafafa;
+    padding: 0 30px;
+  }
+
+  .profile-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+  }
+
+  .profile-wrapper p {
+    align-self: flex-start;
+    text-align: start;
+    padding-left: 30px;
+    margin-right: 0;
+    
+  }
+
+  .profile-wrapper img {
+    max-width: 40%;
+    height: auto;
+    padding: 20px;
+  
+  }
+
+  .skill-wrapper-1,
+  .skill-wrapper-2,
+  .skill-wrapper-3 {
+    display: flex;
+    margin: 30px 15px;
+  }
+
+  .skill-wrapper-1 img,
+  .skill-wrapper-2 img,
+  .skill-wrapper-3 img {
+    width: 97%;
+  }
+
+  footer a {
+    display: none;
+  }
+
+  footer ul {
+    display: flex;
+
+  }
+  footer li {
+    margin: 0 20px 15px;
+    font-weight: 600;
+  }
+
+  .border {
+    margin-right: 60px;
+    margin-left: 40px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  header .banner {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 30px;
+  }
+
+  .banner li {
+    margin: 5px;
+    padding: 10px;
+    font-weight: 700;
+    background-color: #fafafa;
+  }
+  
+  header li {
+    display: inline;
+    font-size: 18px;
+  }
+
+  .profile-wrapper {
+    display: flex;
+    text-align: start;
+    justify-content: center;
+
+  }
+
+  .profile-wrapper img {
+    order: 1;
+    width: 70%;
+    margin-right: 50px;
+    padding-bottom: 60px;
+  }
+
+  .profile-wrapper p {
+    padding-left: 50px;
+    padding-right: 80px;
+    padding-top: 0;
+    margin-top: 10px;
+  }
+
+  h1 {
+    padding-left: 30px;
+  }
+
+  .wrapper h3 {
+    margin: 50px 0;
+  }
+  
+  .skills {
+    display: flex;
+    margin: 0 20px;
+  }
+
+  footer a {
+    display: none;
+  }
+
+  footer li {
+    display: inline;
+    margin: 0 20px;
+    font-weight: 700;
+  }
+
+  footer h3 {
+    margin-left: 20px;
+  }
+
+  .border {
+    margin: 0 60px;
+  }
+}
